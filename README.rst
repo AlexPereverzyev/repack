@@ -1,4 +1,7 @@
 
+.. image:: https://travis-ci.org/AlexPereverzyev/repack.svg
+   :target: https://travis-ci.org/AlexPereverzyev/repack
+
 ==================
 Welcome to Repack!
 ==================
@@ -110,8 +113,6 @@ Requirements
 
 Install
 =======
-
-(This has not been published yet)
 
 sudo pip install repack 
 

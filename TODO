@@ -1,5 +1,4 @@
 
 - add more filters (see todos in modules)
 - add SSO examples(?): JWT/SAML
-- and pip package
 - improve performance

@@ -1,0 +1,6 @@
+
+include LICENSE
+include README.rst
+recursive-include repack *.py
+include repack/VERSION
+recursive-include examples *.py
