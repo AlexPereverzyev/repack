@@ -1,4 +1,10 @@
 
+def _ignore(func):
+    '''Marks function to be ignored by filters linker. '''
+    func.ignore = True       
+    return func
+
+@_ignore
 def prep(func):
     '''Coroutine bootstraper'''
     def start(*args,**kwargs):
