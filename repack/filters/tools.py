@@ -14,3 +14,9 @@ def printout(v):
 def sleep(v, sec):
     time.sleep(sec)
     return v
+
+def broadcast(v, subscribers):
+    if subscribers:
+        for s in subscribers:
+            s.send(v)
+    return v
