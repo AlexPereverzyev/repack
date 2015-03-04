@@ -19,7 +19,7 @@ setup(
     classifiers = [
         'Environment :: Console',
         'Environment :: Web Environment',        
-        'Development Status :: 2 - Pre-Alpha',
+        'Development Status :: 4 - Beta',
         'Operating System :: OS Independent',
         'Programming Language :: Python',
         'Programming Language :: Python :: 3.4',
@@ -29,13 +29,18 @@ setup(
     ],
     requires = [
         'json',
+        'pickle',
+        're',
         'base64',
         'html',
         'urllib',
         'cgi',
         'binascii',
         'zlib',
-        'time'
+        'lzma',
+        'time',
+        'hashlib',
+        'hmac',
     ],
     packages = [
         'repack',

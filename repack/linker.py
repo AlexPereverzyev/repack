@@ -50,8 +50,8 @@ class Linker(object):
             return self._flow_trap
         
         if not f:
-            raise AttributeError('\'{0}\' object has no attribute \'{1}\''
-                .format(self.__class__.__name__, name))
+            raise AttributeError('Repack has no filter or flow \'{0}\''
+                .format(name))
 
     def _filter_trap(self, *args, **kwargs):
         f = self._filters[-1]

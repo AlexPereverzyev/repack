@@ -13,6 +13,9 @@ def join(v, sep = ''):
 def format(v, template = None):
     return template.format(*v) if template != None else v
 
+def replace(v, string, repl):
+    return v.replace(string, repl)
+
 def capture(v, pattern, flags = 0):    
     rx = re.compile(pattern, flags)
     match = rx.match(v)
