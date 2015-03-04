@@ -1,4 +1,3 @@
-
-- add more filters (see todos in modules)
-- add SSO examples(?): JWT/SAML
-- improve performance
+- add RSA/AES signing/encryption filters
+- add XML serialization
+- improve performance 

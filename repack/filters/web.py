@@ -18,11 +18,17 @@ def html_decode(v):
     parser = html.parser.HTMLParser()
     return parser.unescape(v)
 
-def base64_encode(v):
-    return base64.b64encode(v)
+def base64_encode(v, altchars = None):
+    a = altchars
+    if isinstance(a, str):
+        a = bytes(a, 'utf-8')
+    return base64.b64encode(v, a)
 
-def base64_decode(v):
-    return base64.b64decode(v)
+def base64_decode(v, altchars = None):
+    a = altchars
+    if isinstance(a, str):
+        a = bytes(a, 'utf-8')
+    return base64.b64decode(v, a)
 
 def hexlify(v):
     return binascii.hexlify(v)
